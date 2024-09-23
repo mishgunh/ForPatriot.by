@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Источники</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Источники</h1>
+        <p>На этой странице представлены источники информации, использованные для создания контента на сайте.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="plans.html">Планы нацистской Германии по осуществлению геноцида</a></li>
+            <li><a href="death_camps.html">Лагеря смерти</a></li>
+            <li><a href="types_of_camps.html">Виды лагерей</a></li>
+            <li><a href="punitive_operations.html">Карательные операции</a></li>
+            <li><a href="collaboration.html">Деятельность коллаборационистских формирований</a></li>
+            <li><a href="heroism.html">Подвиг белорусского народа</a></li>
+            <li><a href="sources.html">Источники</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Список источников</h2>
+        <ul>
+            <li><a href="https://www.adu.by/images/2023/10/Genozid-bel-naroda-10-11-klass.pdf">Учебное пособие "Геноцид белорусского народа" (10-11 классы)</a></li>
+            <li><a href="https://static.tvr.by/upload/video/news/2023/February/190223/19_gaf/11.mp4">Репортаж Беларусь 1</a></li>
+            <li>Материалы Государственного архива Республики Беларусь</li>
+            <li>Воспоминания очевидцев, собранные исследователями геноцида</li>
+            <li>Документы Нюрнбергского трибунала</li>
+            <li>Книги и статьи о Холокосте и нацистской оккупации в Беларуси</li>
+        </ul>
+
+    
+    </section>
+
+    <footer>
+
+    </footer>
+    <script>
+        // Получаем кнопку переключения темы
+        const themeToggleBtn = document.getElementById('themeToggleBtn');
+    
+        // Проверка сохраненной темы в localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-theme');
+            themeToggleBtn.textContent = 'Светлая тема';
+        } else {
+            themeToggleBtn.textContent = 'Темная тема';
+        }
+    
+        // Обработчик нажатия на кнопку
+        themeToggleBtn.addEventListener('click', function() {
+            document.body.classList.toggle('dark-theme');
+    
+            // Смена текста на кнопке
+            if (document.body.classList.contains('dark-theme')) {
+                themeToggleBtn.textContent = 'Светлая тема';
+                localStorage.setItem('theme', 'dark'); // Сохраняем тему
+            } else {
+                themeToggleBtn.textContent = 'Темная тема';
+                localStorage.setItem('theme', 'light'); // Сохраняем тему
+            }
+        });
+    </script>
+    
+</body>
+</html>

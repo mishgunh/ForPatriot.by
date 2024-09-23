@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Геноцид белорусского народа</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Геноцид белорусского народа</h1>
+         <!-- Добавляем кнопку переключения темы -->
+    <button id="themeToggleBtn">Темная тема</button>
+        <p>Добро пожаловать на сайт, посвящённый памяти жертв и событиям, связанным с геноцидом белорусского народа.</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="plans.html">Планы нацистской Германии по осуществлению геноцида</a></li>
+            <li><a href="death_camps.html">Лагеря смерти</a></li>
+            <li><a href="types_of_camps.html">Виды лагерей</a></li>
+            <li><a href="punitive_operations.html">Карательные операции</a></li>
+            <li><a href="collaboration.html">Деятельность коллаборационистских формирований</a></li>
+            <li><a href="heroism.html">Подвиг белорусского народа</a></li>
+            <li><a href="sources.html">Источники</a></li>
+        </ul>
+    </nav>
+    <div class="image-container">
+        <img src="img/фон новый.png" alt="" width="800">
+    </div>
+    <footer>
+        <p>&copy; 2024 Память жертв геноцида</p>
+    </footer>
+    <script>
+        // Получаем кнопку переключения темы
+        const themeToggleBtn = document.getElementById('themeToggleBtn');
+    
+        // Проверка сохраненной темы в localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-theme');
+            themeToggleBtn.textContent = 'Светлая тема';
+        } else {
+            themeToggleBtn.textContent = 'Темная тема';
+        }
+    
+        // Обработчик нажатия на кнопку
+        themeToggleBtn.addEventListener('click', function() {
+            document.body.classList.toggle('dark-theme');
+    
+            // Смена текста на кнопке
+            if (document.body.classList.contains('dark-theme')) {
+                themeToggleBtn.textContent = 'Светлая тема';
+                localStorage.setItem('theme', 'dark'); // Сохраняем тему
+            } else {
+                themeToggleBtn.textContent = 'Темная тема';
+                localStorage.setItem('theme', 'light'); // Сохраняем тему
+            }
+        });
+    </script>
+    <script>
+        // Получаем кнопку переключения темы
+        const themeToggleBtn = document.getElementById('themeToggleBtn');
+    
+        // Проверка сохраненной темы в localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-theme');
+            themeToggleBtn.textContent = 'Светлая тема';
+        } else {
+            themeToggleBtn.textContent = 'Темная тема';
+        }
+    
+        // Обработчик нажатия на кнопку
+        themeToggleBtn.addEventListener('click', function() {
+            document.body.classList.toggle('dark-theme');
+    
+            // Смена текста на кнопке
+            if (document.body.classList.contains('dark-theme')) {
+                themeToggleBtn.textContent = 'Светлая тема';
+                localStorage.setItem('theme', 'dark'); // Сохраняем тему
+            } else {
+                themeToggleBtn.textContent = 'Темная тема';
+                localStorage.setItem('theme', 'light'); // Сохраняем тему
+            }
+        });
+    </script>
+    
+</body>
+</html>

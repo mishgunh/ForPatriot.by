@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Деятельность коллаборационистских формирований</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Деятельность коллаборационистских формирований</h1>
+        <p>Коллаборационистские формирования сотрудничали с нацистскими оккупантами, помогая им в проведении карательных операций и других репрессивных мер против населения.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="plans.html">Планы нацистской Германии по осуществлению геноцида</a></li>
+            <li><a href="death_camps.html">Лагеря смерти</a></li>
+            <li><a href="types_of_camps.html">Виды лагерей</a></li>
+            <li><a href="punitive_operations.html">Карательные операции</a></li>
+            <li><a href="heroism.html">Подвиг белорусского народа</a></li>
+            <li><a href="sources.html">Источники</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Описание деятельности коллаборационистов</h2>
+        <p>Коллаборационисты — это люди и формирования, которые сотрудничали с нацистами на оккупированных территориях. В Беларуси коллаборационистские формирования участвовали в карательных операциях, поиске и уничтожении партизан, а также в подавлении сопротивления местного населения.</p>
+        <p>Они формировались как из местных жителей, так и из пленных солдат Красной армии. Основные группы коллаборационистов включали полицаев и добровольные батальоны, которые были организованы нацистами для помощи в оккупационной политике.</p>
+
+        <!-- Место для фото коллаборационистских формирований -->
+        <img src="img/коллаб.jpg" alt="Коллаборационистские формирования" width="600">
+
+        <h2>Роль полицаев</h2>
+        <p>Полицаи играли важную роль в поддержании нацистского режима на оккупированных территориях. Они помогали в осуществлении карательных операций, ловили партизан и обеспечивали порядок в зонах оккупации. Именно полицаи часто сопровождали карательные отряды, уничтожавшие деревни и их жителей.</p>
+
+        <!-- Место для фото полицаев -->
+        <img src="img/полиц.jpg" alt="Полицаи" width="600">
+
+        
+        <h2>QR-код видео</h2>
+        <div>
+            <p>Отсканируйте QR-код для выполнения задания по теме "Деятельность коллаборационистских формирований":</p>
+            <img src="img/лекцр.gif" alt="QR код задания">
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
+    <script>
+        // Получаем кнопку переключения темы
+        const themeToggleBtn = document.getElementById('themeToggleBtn');
+    
+        // Проверка сохраненной темы в localStorage
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-theme');
+            themeToggleBtn.textContent = 'Светлая тема';
+        } else {
+            themeToggleBtn.textContent = 'Темная тема';
+        }
+    
+        // Обработчик нажатия на кнопку
+        themeToggleBtn.addEventListener('click', function() {
+            document.body.classList.toggle('dark-theme');
+    
+            // Смена текста на кнопке
+            if (document.body.classList.contains('dark-theme')) {
+                themeToggleBtn.textContent = 'Светлая тема';
+                localStorage.setItem('theme', 'dark'); // Сохраняем тему
+            } else {
+                themeToggleBtn.textContent = 'Темная тема';
+                localStorage.setItem('theme', 'light'); // Сохраняем тему
+            }
+        });
+    </script>
+    
+</body>
+</html>
